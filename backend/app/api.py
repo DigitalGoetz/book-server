@@ -15,8 +15,8 @@ if "BOOK_PATH" in os.environ:
 
 main = FastAPI()
 router = Endpoints(PATH)
+main.add_middleware(CORSMiddleware, allow_origins=ORIGINS, allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
 main.include_router(router.get_router())
-main.add_middleware(CORSMiddleware, allow_origins=ORIGINS, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 
 if __name__ == "__main__":

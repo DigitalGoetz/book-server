@@ -1,0 +1,23 @@
+/* .BookListing {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.chaptertitle {
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: chartreuse;
+}
+
+.booktitle {
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: aquamarine;
+} */
+
+.hidden {
+  display: none;
+}

@@ -13,12 +13,13 @@ services:
       - type: bind
         source: /home/michael/Music/Books
         target: /Books
-  # postgresql:
-  #   image: postgres:13.4
-  #   restart: always
-  #   ports:
-  #     - "5432:5432"
-  #   environment:
-  #     - POSTGRES_PASSWORD=c2sdemo
-  #     - POSTGRES_USER=admin
-  #     - POSTGRES_DB=observations
+  book_ui:
+    image: goetz/bookclient:0.1
+    ports:
+      - 3000:3000
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - REACT_APP_BOOK_ENDPOINT=http://localhost:4001

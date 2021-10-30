@@ -1,0 +1,26 @@
+.Title {
+  color: #093a3e;
+  font-weight: normal;
+}
+
+.chapter {
+  padding: 0.6em;
+  border: 1px solid blue;
+  background-color: #97c8eb;
+}
+
+.book {
+  padding: 0.6em;
+  border: 1px solid #001011;
+  background-color: #64e9ee;
+}
+
+.header {
+  padding: 0.6em;
+  border: 1px solid #001011;
+  background-color: #3aafb9;
+}
+
+.hideTitle {
+  display: none;
+}
