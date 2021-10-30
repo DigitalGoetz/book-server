@@ -1,6 +1,6 @@
 services:
   book_api:
-    image: goetz/bookserver:0.1
+    image: bookserver/server:0.1
     ports:
       - 4001:4001
     build:
@@ -14,7 +14,7 @@ services:
         source: /home/michael/Music/Books
         target: /Books
   book_ui:
-    image: goetz/bookclient:0.1
+    image: bookserver/client:0.1
     ports:
       - 3000:3000
     build:
